@@ -12,6 +12,16 @@ By default, structured lists have a transparent background layer. Optionally,
 you can apply a colored background layer to a structured list. Structured lists
 with a colored background layer are only available in the hang alignment.
 
+<InlineNotification>
+
+[Experimental tiles](https://react.carbondesignsystem.com/?path=/docs/experimental-feature-flags-tile--overview)
+are now available. This addition enhances accessibility and only applies to the
+visual appearance, not the function of tiles. Though we are not deprecating the
+current tiles, we encourage all design teams to use the new experimental tiles
+in their products moving forward.
+
+</InlineNotification>
+
 | Element                     | Property         | Color token          |
 | --------------------------- | ---------------- | -------------------- |
 | Header text                 | text-color       | `$text-primary`      |
@@ -35,13 +45,13 @@ with a colored background layer are only available in the hang alignment.
 
 <Tab label="Transparent">
 
-![Color of the for interactive structured list](images/structured-list-style-1.png)
+![Color of the interactive structured list](images/structured-list-style-1.png)
 
 </Tab>
 
 <Tab label="Background">
 
-![Color of the for interactive structured list](images/structured-list-style-2.png)
+![Color of the interactive structured list](images/structured-list-style-2.png)
 
 </Tab>
 
@@ -74,8 +84,8 @@ transparent background layer and its optional color background layer.
 |                     | Row text          | text-color       | `$text-disabled`           |
 |                     | Icon              | inner fill       | `$icon-disabled`           |
 | Disabled (selected) | Row               | background-color | `$layer-selected` \*       |
-|                     | Row text          | `$focus`         | `$text-disabled`           |
-|                     | Icon              | `$focus`         | `$icon-disabled`           |
+|                     | Row text          | text-color       | `$text-disabled`           |
+|                     | Icon              | inner fill       | `$icon-disabled`           |
 
 <Caption>
   * Denotes a contextual color token that will change values based on the layer
@@ -83,7 +93,7 @@ transparent background layer and its optional color background layer.
 </Caption>
 
 <Row>
-<Column colLg={8}>
+<Column colLg={12}>
 <Tabs>
 
 <Tab label="Transparent">
@@ -148,7 +158,7 @@ set in sentence case. All typography is left aligned.
 </div>
 
 <Caption>
-  SSpacing and measurements for selectable structured list with hang alignment |
+  Spacing and measurements for selectable structured list with hang alignment. |
   px / rem
 </Caption>
 
